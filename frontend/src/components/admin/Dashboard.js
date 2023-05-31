@@ -89,38 +89,7 @@ const Dashboard = () => {
             },
         ],
     };
-    // radar chart
-    let kho_giavi = 0;
-    let dong_lanh = 0;
-    let che_bien = 0;
-    let thit_trung_haisan = 0;
-    let rau_cu_traicay = 0;
-    let banh_keo = 0;
-    let do_uong = 0;
-    products &&
-        products.forEach((product) => {
-            if (product.category === "Aos") {
-                kho_giavi += 1;
-            }
-            if (product.category === "Rau-Củ-Trái cây") {
-                rau_cu_traicay += 1;
-            }
-            if (product.category === "Đồ uống - Giải khát") {
-                do_uong += 1;
-            }
-            if (product.category === "Bánh kẹo - Đồ ăn vặt") {
-                banh_keo += 1;
-            }
-            if (product.category === "Thực phẩm chế biến") {
-                che_bien += 1;
-            }
-            if (product.category === "Thịt-Trứng-Hải sản") {
-                thit_trung_haisan += 1;
-            }
-            if (product.category === "Thực phẩm đông lạnh") {
-                dong_lanh += 1;
-            }
-        });
+   
    
     return (
         <Fragment>
