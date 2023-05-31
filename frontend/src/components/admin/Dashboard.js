@@ -99,7 +99,7 @@ const Dashboard = () => {
     let do_uong = 0;
     products &&
         products.forEach((product) => {
-            if (product.category === "Thực phẩm Khô - Gia Vị") {
+            if (product.category === "Aos") {
                 kho_giavi += 1;
             }
             if (product.category === "Rau-Củ-Trái cây") {
@@ -121,29 +121,7 @@ const Dashboard = () => {
                 dong_lanh += 1;
             }
         });
-    const data = {
-        labels: [
-            'Thực phẩm khô - Gia vị',
-            'Thực phẩm đông lạnh',
-            'Thực phẩm chế biến',
-            'Thịt - Trứng - Hải sản',
-            'Rau - Củ - Trái cây',
-            'Bánh kẹo - Đồ ăn vặt',
-            'Đồ uống - Giải khát'
-        ],
-        datasets: [{
-            label: 'Danh mục sản phẩm',
-            data: [kho_giavi, dong_lanh, che_bien, thit_trung_haisan, rau_cu_traicay, banh_keo, do_uong],
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
-        }]
-    };
-
+   
     return (
         <Fragment>
             <div class="grid-bg ba-grid anim">
@@ -267,12 +245,7 @@ const Dashboard = () => {
                                 <div className='col-md-6'>
                                     <ChartIncome />
                                 </div>
-                                <div className='radar col-md-5 card text-white bg-light'>
-
-                                    <Radar
-                                        data={data}
-                                    />
-                                </div>
+                               
                             </div>
 
                         </div>
