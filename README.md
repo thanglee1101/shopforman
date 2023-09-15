@@ -1,11 +1,3 @@
-# Nhóm 8
-# Đề tài: Website bán Quần áo nam
-
-<h3>Thành viên nhóm: </h3>
-<h6>+ Lê Văn Thắng</h6>
-<h6>+ Nguyễn Thành Đạt</h6>
-<h6>+ Nguyễn Đức Việt</h6>
-
 
 
 ### Hướng dẫn cài đặt thư viện hỗ trợ  (frontend & backend)
